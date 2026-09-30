@@ -1,0 +1,67 @@
+{
+ "modelo": "financeiro-dre",
+ "paginas": [
+  {
+   "nome": "Financeiro (DRE)",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Financeiro (DRE)",
+   "visuais": [
+    {
+     "slot": "kpi1",
+     "tipo": "card",
+     "titulo": "KPI 1",
+     "x": 24,
+     "y": 80,
+     "w": 296,
+     "h": 168
+    },
+    {
+     "slot": "kpi2",
+     "tipo": "card",
+     "titulo": "KPI 2",
+     "x": 336,
+     "y": 80,
+     "w": 296,
+     "h": 168
+    },
+    {
+     "slot": "kpi3",
+     "tipo": "card",
+     "titulo": "KPI 3",
+     "x": 648,
+     "y": 80,
+     "w": 296,
+     "h": 168
+    },
+    {
+     "slot": "kpi4",
+     "tipo": "card",
+     "titulo": "KPI 4",
+     "x": 960,
+     "y": 80,
+     "w": 296,
+     "h": 168
+    },
+    {
+     "slot": "dre",
+     "tipo": "pivotTable",
+     "titulo": "DRE",
+     "x": 24,
+     "y": 264,
+     "w": 712,
+     "h": 432
+    },
+    {
+     "slot": "orcado_realizado",
+     "tipo": "clusteredColumnChart",
+     "titulo": "Orcado x realizado",
+     "x": 752,
+     "y": 264,
+     "w": 504,
+     "h": 432
+    }
+   ]
+  }
+ ]
+}

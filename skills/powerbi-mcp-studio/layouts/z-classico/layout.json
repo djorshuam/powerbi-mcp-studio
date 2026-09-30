@@ -1,0 +1,40 @@
+{
+ "modelo": "z-classico",
+ "paginas": [
+  {
+   "nome": "Z classico",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Z classico",
+   "visuais": [
+    {
+     "slot": "kpis",
+     "tipo": "multiRowCard",
+     "titulo": "Indicadores",
+     "x": 24,
+     "y": 80,
+     "w": 296,
+     "h": 376
+    },
+    {
+     "slot": "principal",
+     "tipo": "clusteredColumnChart",
+     "titulo": "Analise principal",
+     "x": 336,
+     "y": 80,
+     "w": 920,
+     "h": 376
+    },
+    {
+     "slot": "detalhe",
+     "tipo": "tableEx",
+     "titulo": "Detalhe",
+     "x": 24,
+     "y": 472,
+     "w": 1232,
+     "h": 224
+    }
+   ]
+  }
+ ]
+}

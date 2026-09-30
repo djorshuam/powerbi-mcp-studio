@@ -1,0 +1,8 @@
+{
+  "_comentario": "Copie para clientes/<cliente>/config.json. figma_file_key vem da URL figma.com/design/<CHAVE>/...; paginas mapeia o nome da pagina no Power BI (python scripts/fundo_pbi.py --listar --pbix X.pbix) para o node-id do frame (node-id=12-34 na URL vira 12:34).",
+  "figma_file_key": "COLE_A_CHAVE_DO_ARQUIVO_FIGMA",
+  "paginas": {
+    "Visao Geral": "12:34",
+    "Detalhe": "56:78"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "powerbi-mcp-studio",
+  "owner": { "name": "David Jorshuam" },
+  "plugins": [
+    { "name": "powerbi-mcp-studio", "source": "./", "description": "Skill + agentes para operar o Power BI Desktop com o Claude." }
+  ]
+}

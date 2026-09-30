@@ -1,0 +1,67 @@
+{
+ "modelo": "scorecard",
+ "paginas": [
+  {
+   "nome": "Scorecard / farol",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Scorecard / farol",
+   "visuais": [
+    {
+     "slot": "no_verde",
+     "tipo": "card",
+     "titulo": "Na meta",
+     "x": 24,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "atencao",
+     "tipo": "card",
+     "titulo": "Atencao",
+     "x": 336,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "criticos",
+     "tipo": "card",
+     "titulo": "Criticos",
+     "x": 648,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "sem_meta",
+     "tipo": "card",
+     "titulo": "Sem meta",
+     "x": 960,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "matriz",
+     "tipo": "pivotTable",
+     "titulo": "Indicadores x periodo",
+     "x": 24,
+     "y": 240,
+     "w": 920,
+     "h": 456
+    },
+    {
+     "slot": "filtro",
+     "tipo": "slicer",
+     "titulo": "Filtros",
+     "x": 960,
+     "y": 240,
+     "w": 296,
+     "h": 456
+    }
+   ]
+  }
+ ]
+}

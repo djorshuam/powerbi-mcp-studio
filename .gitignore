@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+*.bak
+_backup_claude/
+_to_delete/
+.env
+*.zip

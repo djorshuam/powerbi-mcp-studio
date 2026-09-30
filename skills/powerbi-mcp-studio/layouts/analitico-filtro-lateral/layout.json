@@ -1,0 +1,76 @@
+{
+ "modelo": "analitico-filtro-lateral",
+ "paginas": [
+  {
+   "nome": "Analitico com filtro lateral",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Analitico com filtro lateral",
+   "visuais": [
+    {
+     "slot": "filtro1",
+     "tipo": "slicer",
+     "titulo": "Periodo",
+     "x": 24,
+     "y": 80,
+     "w": 296,
+     "h": 192
+    },
+    {
+     "slot": "evolucao",
+     "tipo": "lineChart",
+     "titulo": "Evolucao",
+     "x": 336,
+     "y": 80,
+     "w": 920,
+     "h": 192
+    },
+    {
+     "slot": "filtro2",
+     "tipo": "slicer",
+     "titulo": "Regiao",
+     "x": 24,
+     "y": 288,
+     "w": 296,
+     "h": 192
+    },
+    {
+     "slot": "ranking",
+     "tipo": "clusteredBarChart",
+     "titulo": "Ranking",
+     "x": 336,
+     "y": 288,
+     "w": 504,
+     "h": 192
+    },
+    {
+     "slot": "composicao",
+     "tipo": "donutChart",
+     "titulo": "Composicao",
+     "x": 856,
+     "y": 288,
+     "w": 400,
+     "h": 192
+    },
+    {
+     "slot": "filtro3",
+     "tipo": "slicer",
+     "titulo": "Categoria",
+     "x": 24,
+     "y": 496,
+     "w": 296,
+     "h": 200
+    },
+    {
+     "slot": "detalhe",
+     "tipo": "tableEx",
+     "titulo": "Detalhe",
+     "x": 336,
+     "y": 496,
+     "w": 920,
+     "h": 200
+    }
+   ]
+  }
+ ]
+}

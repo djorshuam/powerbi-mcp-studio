@@ -1,0 +1,67 @@
+{
+ "modelo": "comparativo-periodos",
+ "paginas": [
+  {
+   "nome": "Comparativo de periodos",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Comparativo de periodos",
+   "visuais": [
+    {
+     "slot": "kpi1",
+     "tipo": "card",
+     "titulo": "KPI 1",
+     "x": 24,
+     "y": 80,
+     "w": 400,
+     "h": 144
+    },
+    {
+     "slot": "kpi2",
+     "tipo": "card",
+     "titulo": "KPI 2",
+     "x": 440,
+     "y": 80,
+     "w": 400,
+     "h": 144
+    },
+    {
+     "slot": "kpi3",
+     "tipo": "card",
+     "titulo": "KPI 3",
+     "x": 856,
+     "y": 80,
+     "w": 400,
+     "h": 144
+    },
+    {
+     "slot": "periodos",
+     "tipo": "clusteredColumnChart",
+     "titulo": "Atual x anterior",
+     "x": 24,
+     "y": 240,
+     "w": 1232,
+     "h": 232
+    },
+    {
+     "slot": "variacoes",
+     "tipo": "tableEx",
+     "titulo": "Variacoes",
+     "x": 24,
+     "y": 488,
+     "w": 608,
+     "h": 208
+    },
+    {
+     "slot": "acumulado",
+     "tipo": "lineChart",
+     "titulo": "Acumulado no ano",
+     "x": 648,
+     "y": 488,
+     "w": 608,
+     "h": 208
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "modelo": "operacional",
+ "paginas": [
+  {
+   "nome": "Operacional / NOC",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Operacional / NOC",
+   "visuais": [
+    {
+     "slot": "metrica1",
+     "tipo": "card",
+     "titulo": "Metrica 1",
+     "x": 24,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica2",
+     "tipo": "card",
+     "titulo": "Metrica 2",
+     "x": 336,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica3",
+     "tipo": "card",
+     "titulo": "Metrica 3",
+     "x": 648,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica4",
+     "tipo": "card",
+     "titulo": "Metrica 4",
+     "x": 960,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica5",
+     "tipo": "card",
+     "titulo": "Metrica 5",
+     "x": 24,
+     "y": 240,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica6",
+     "tipo": "card",
+     "titulo": "Metrica 6",
+     "x": 336,
+     "y": 240,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica7",
+     "tipo": "card",
+     "titulo": "Metrica 7",
+     "x": 648,
+     "y": 240,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "metrica8",
+     "tipo": "card",
+     "titulo": "Metrica 8",
+     "x": 960,
+     "y": 240,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "serie",
+     "tipo": "areaChart",
+     "titulo": "Ultimas horas",
+     "x": 24,
+     "y": 400,
+     "w": 816,
+     "h": 296
+    },
+    {
+     "slot": "ocorrencias",
+     "tipo": "tableEx",
+     "titulo": "Ocorrencias",
+     "x": 856,
+     "y": 400,
+     "w": 400,
+     "h": 296
+    }
+   ]
+  }
+ ]
+}

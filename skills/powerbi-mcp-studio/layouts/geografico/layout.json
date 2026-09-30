@@ -1,0 +1,58 @@
+{
+ "modelo": "geografico",
+ "paginas": [
+  {
+   "nome": "Geografico",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Geografico",
+   "visuais": [
+    {
+     "slot": "kpi1",
+     "tipo": "card",
+     "titulo": "KPI 1",
+     "x": 24,
+     "y": 80,
+     "w": 400,
+     "h": 152
+    },
+    {
+     "slot": "kpi2",
+     "tipo": "card",
+     "titulo": "KPI 2",
+     "x": 440,
+     "y": 80,
+     "w": 400,
+     "h": 152
+    },
+    {
+     "slot": "kpi3",
+     "tipo": "card",
+     "titulo": "KPI 3",
+     "x": 856,
+     "y": 80,
+     "w": 400,
+     "h": 152
+    },
+    {
+     "slot": "mapa",
+     "tipo": "filledMap",
+     "titulo": "Mapa",
+     "x": 24,
+     "y": 248,
+     "w": 816,
+     "h": 448
+    },
+    {
+     "slot": "ranking",
+     "tipo": "clusteredBarChart",
+     "titulo": "Ranking por local",
+     "x": 856,
+     "y": 248,
+     "w": 400,
+     "h": 448
+    }
+   ]
+  }
+ ]
+}

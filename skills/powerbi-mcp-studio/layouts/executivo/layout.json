@@ -1,0 +1,76 @@
+{
+ "modelo": "executivo",
+ "paginas": [
+  {
+   "nome": "Executivo",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Executivo",
+   "visuais": [
+    {
+     "slot": "kpi1",
+     "tipo": "card",
+     "titulo": "KPI 1",
+     "x": 24,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "kpi2",
+     "tipo": "card",
+     "titulo": "KPI 2",
+     "x": 336,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "kpi3",
+     "tipo": "card",
+     "titulo": "KPI 3",
+     "x": 648,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "kpi4",
+     "tipo": "card",
+     "titulo": "KPI 4",
+     "x": 960,
+     "y": 80,
+     "w": 296,
+     "h": 144
+    },
+    {
+     "slot": "tendencia",
+     "tipo": "lineChart",
+     "titulo": "Tendencia do indicador principal",
+     "x": 24,
+     "y": 240,
+     "w": 1232,
+     "h": 256
+    },
+    {
+     "slot": "comparativo1",
+     "tipo": "clusteredBarChart",
+     "titulo": "Comparativo por dimensao",
+     "x": 24,
+     "y": 512,
+     "w": 608,
+     "h": 184
+    },
+    {
+     "slot": "comparativo2",
+     "tipo": "clusteredColumnChart",
+     "titulo": "Comparativo por periodo",
+     "x": 648,
+     "y": 512,
+     "w": 608,
+     "h": 184
+    }
+   ]
+  }
+ ]
+}

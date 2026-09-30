@@ -1,0 +1,8 @@
+{
+  "name": "powerbi-mcp-studio",
+  "version": "1.0.0",
+  "description": "Claude operando o Power BI Desktop de ponta a ponta: planilha -> modelo estrela -> paginas com visuais nativos, fundo SVG e tema, auditoria e muito mais.",
+  "author": { "name": "David Jorshuam" },
+  "license": "MIT",
+  "keywords": ["power-bi", "dax", "claude-code", "skill", "dashboard"]
+}

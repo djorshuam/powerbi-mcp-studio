@@ -1,0 +1,49 @@
+{
+ "modelo": "detalhe-drill",
+ "paginas": [
+  {
+   "nome": "Detalhe / drill-through",
+   "largura": 1280,
+   "altura": 720,
+   "titulo": "Detalhe / drill-through",
+   "visuais": [
+    {
+     "slot": "contexto",
+     "tipo": "card",
+     "titulo": "Item selecionado",
+     "x": 24,
+     "y": 80,
+     "w": 400,
+     "h": 144
+    },
+    {
+     "slot": "kpi1",
+     "tipo": "card",
+     "titulo": "KPI 1",
+     "x": 440,
+     "y": 80,
+     "w": 400,
+     "h": 144
+    },
+    {
+     "slot": "kpi2",
+     "tipo": "card",
+     "titulo": "KPI 2",
+     "x": 856,
+     "y": 80,
+     "w": 400,
+     "h": 144
+    },
+    {
+     "slot": "detalhe",
+     "tipo": "tableEx",
+     "titulo": "Detalhe",
+     "x": 24,
+     "y": 240,
+     "w": 1232,
+     "h": 456
+    }
+   ]
+  }
+ ]
+}
