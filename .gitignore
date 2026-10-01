@@ -6,3 +6,4 @@ _backup_claude/
 _to_delete/
 .env
 *.zip
+!dist/powerbi-mcp-studio.zip

@@ -45,6 +45,13 @@ O [MCP oficial da Microsoft](https://github.com/microsoft/powerbi-modeling-mcp) 
    /plugin install powerbi-mcp-studio@powerbi-mcp-studio
    ```
    </details>
+   <details><summary>Sem npx (app Claude ou instalação manual)</summary>
+
+   - **App Claude (desktop/web):** baixe **[powerbi-mcp-studio.zip](https://github.com/djorshuam/powerbi-mcp-studio/raw/main/dist/powerbi-mcp-studio.zip)** e envie em *Configurações → Capacidades → Skills*.
+     ⚠️ Não use o "Code → Download ZIP" do GitHub: ele traz o repositório inteiro e o app recusa.
+   - **Claude Code manual:** descompacte esse mesmo zip em `~/.claude/skills/` (fica `~/.claude/skills/powerbi-mcp-studio/SKILL.md`) e copie `agents/*.md` do repositório para `~/.claude/agents/`.
+   - O `npx github:...` precisa do **Git** instalado e do Node.js 18+. Se der erro, use uma das opções acima.
+   </details>
 
 2. **MCP do Power BI**
    ```bash
