@@ -46,6 +46,7 @@ Leia a referencia antes de agir. Cliente com pasta em `clientes/<cliente>/`: lei
 
 ## 1. Descobrir o ambiente
 - MCP `ListLocalInstances`: confirme o relatorio pelo `parentWindowTitle` (pode haver varias instancias; conecte na certa). Nada responde → `instalacao.md`.
+- **MCP `powerbi-modeling` ausente nesta sessao** (nenhuma ferramenta `powerbi-modeling`/`ListLocalInstances`): nao pare em "nao tenho acesso". Explique em 1 frase que o MCP roda no computador da pessoa e conduza a instalacao: (1) Node.js LTS; (2) instalador automatico `https://github.com/djorshuam/powerbi-mcp-studio/raw/main/instalar/instalar-mcp-windows.ps1` (botao direito → Executar com PowerShell) ou o JSON manual de `references/instalacao.md` (peca o conteudo atual do arquivo e devolva mesclado); (3) fechar o app pelo icone da bandeja e reabrir; (4) testar. Enquanto isso, ofereca o que funciona sem MCP (planilha → HTML, temas, layouts, auditoria de arquivo enviado).
 - Formato: `.pbix` (o mais comum) ou `.pbip`. Os scripts de arquivo exigem formato **PBIR** (paginas em `Report/definition/pages/*/page.json`, padrao nos Desktops recentes); formato legado (`Report/Layout`) → codigo 2. **Relatorios novos saem no formato legado se a previa 'PBIR para PBIX' estiver desligada** (Opcoes > Recursos em versao previa): peca ao usuario para ligar, reabrir e salvar uma vez (converte), ou salvar como .pbip; senao, faca pela interface.
 
 ## 2. Ordem quando a tarefa mistura caminhos

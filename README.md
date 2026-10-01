@@ -33,6 +33,8 @@ O [MCP oficial da Microsoft](https://github.com/microsoft/powerbi-modeling-mcp) 
 
 ## Instalação (3 passos)
 
+> **Usa o app Claude Desktop (inclusive gratuito)?** Siga o **[passo a passo do INSTALACAO.md](INSTALACAO.md)**: tem instalador automático do MCP para Windows.
+
 1. **Skill + agentes**
    ```bash
    npx github:djorshuam/powerbi-mcp-studio
