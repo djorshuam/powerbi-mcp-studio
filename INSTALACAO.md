@@ -31,7 +31,7 @@ Escolha onde você usa o Claude. A skill sozinha **não instala o MCP**: o MCP d
 4. **Feche o Claude Desktop de verdade** (ícone perto do relógio → Sair) e abra de novo.
 5. **Teste:** abra um `.pbix` no Power BI Desktop e peça: *"use a /powerbi-mcp-studio e identifique o arquivo Power BI aberto"*. Na primeira vez, aceite os termos do MCP da Microsoft.
 
-**Não apareceu?** Em *Configurações → Servidores MCP locais* o servidor `powerbi-modeling` deve estar listado. Se estiver com erro, confira o Node (`node -v` ≥ 18). Se essa opção não existir, o seu plano/versão não oferece MCP local.
+**Não apareceu?** Em *Configurações → Servidores MCP locais* o servidor `powerbi-modeling` deve estar listado. Se estiver com erro, confira o Node (`node -v` ≥ 18). Erro `npm error enoent ... AppData\Roaming\npm` no log: rode `New-Item -ItemType Directory -Force "$env:APPDATA\npm"` no PowerShell e reabra o app. Se essa opção não existir, o seu plano/versão não oferece MCP local.
 
 ## Claude Code
 

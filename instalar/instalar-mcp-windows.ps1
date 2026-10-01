@@ -18,6 +18,8 @@ if (-not $npx) {
   Start-Process "https://nodejs.org"; Read-Host "Enter para sair"; exit 1
 }
 Write-Host "npx: $npx"
+# Node recem-instalado: o npm falha com ENOENT se a pasta %APPDATA%\npm nao existir
+New-Item -ItemType Directory -Force -Path "$env:APPDATA\npm" | Out-Null
 
 # 2. Arquivo de configuracao (instalacao normal ou Microsoft Store)
 $cands = @("$env:APPDATA\Claude\claude_desktop_config.json")
