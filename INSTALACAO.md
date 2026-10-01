@@ -11,7 +11,7 @@ Escolha onde você usa o Claude. A skill sozinha **não instala o MCP**: o MCP d
 ## App Claude Desktop (Windows)
 
 1. **Instale a skill:** baixe [powerbi-mcp-studio.zip](https://github.com/djorshuam/powerbi-mcp-studio/raw/main/dist/powerbi-mcp-studio.zip) → *Configurações → Capacidades → Skills* → enviar. (Não use o "Code → Download ZIP" do GitHub.)
-2. **Instale o Node.js LTS:** [nodejs.org](https://nodejs.org).
+2. **Node.js:** o instalador do passo 3 instala sozinho se faltar (via winget). Se preferir, instale a versão LTS em [nodejs.org](https://nodejs.org).
 3. **Configure o MCP do Power BI (automático):** baixe [instalar-mcp-windows.ps1](https://github.com/djorshuam/powerbi-mcp-studio/raw/main/instalar/instalar-mcp-windows.ps1), clique com o botão direito → **Executar com PowerShell**. Ele faz backup da sua configuração e só acrescenta o Power BI.
    <details><summary>Prefere fazer à mão?</summary>
 

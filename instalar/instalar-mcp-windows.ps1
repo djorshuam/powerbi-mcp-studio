@@ -8,8 +8,13 @@ Write-Host "`n== powerbi-mcp-studio: configurando o MCP do Power BI ==`n"
 # 1. Node.js / npx
 $npx = (Get-Command npx.cmd -ErrorAction SilentlyContinue).Source
 if (-not $npx -and (Test-Path "C:\Program Files\nodejs\npx.cmd")) { $npx = "C:\Program Files\nodejs\npx.cmd" }
+if (-not $npx -and (Get-Command winget -ErrorAction SilentlyContinue)) {
+  Write-Host "Node.js nao encontrado. Instalando o Node.js LTS pelo winget (pode pedir permissao do Windows)..." -ForegroundColor Yellow
+  winget install --id OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements
+  if (Test-Path "C:\Program Files\nodejs\npx.cmd") { $npx = "C:\Program Files\nodejs\npx.cmd" }
+}
 if (-not $npx) {
-  Write-Host "Node.js nao encontrado. Instale a versao LTS em https://nodejs.org e rode este script de novo." -ForegroundColor Yellow
+  Write-Host "Nao consegui instalar o Node.js automaticamente. Instale a versao LTS em https://nodejs.org (avancar, avancar, concluir) e rode este script de novo." -ForegroundColor Yellow
   Start-Process "https://nodejs.org"; Read-Host "Enter para sair"; exit 1
 }
 Write-Host "npx: $npx"
