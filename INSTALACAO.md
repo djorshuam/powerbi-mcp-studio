@@ -2,13 +2,13 @@
 
 Escolha onde você usa o Claude. A skill sozinha **não instala o MCP**: o MCP do Power BI é um programa que roda no seu computador e é configurado uma vez.
 
-| Onde | O que funciona |
-|---|---|
-| **App Claude Desktop** (inclusive plano gratuito, se o seu plano permitir MCP local) | planilha → dashboard HTML, temas, layouts, auditoria; **com o MCP**: ler e alterar o modelo do Power BI aberto |
-| **App Claude web** | tudo que não depende do seu computador (envie os arquivos na conversa) |
-| **Claude Code** (plano pago) | tudo, incluindo agentes e edição direta de `.pbix`/`.pbip` na sua pasta |
+| Onde | Plano | O que funciona |
+|---|---|---|
+| **Claude Code** (terminal ou aba Code do app) | pago (Pro+) | tudo: MCP, agentes, edição de `.pbix`/`.pbip` na sua pasta |
+| **Cowork** (app Claude Desktop) | pago (Pro+) | MCP local via app desktop, edição de arquivos das pastas conectadas |
+| **Conversa comum** (app ou web), inclusive **gratuito** | qualquer | só arquivos anexados: planilha → dashboard HTML, temas, layouts, auditoria de `.pbix` enviado. **Não conecta ao Power BI aberto** |
 
-## App Claude Desktop (Windows)
+## Cowork no app Claude Desktop (Windows, plano pago)
 
 1. **Instale a skill:** baixe [powerbi-mcp-studio.zip](https://github.com/djorshuam/powerbi-mcp-studio/raw/main/dist/powerbi-mcp-studio.zip) → *Configurações → Capacidades → Skills* → enviar. (Não use o "Code → Download ZIP" do GitHub.)
 2. **Node.js:** o instalador do passo 3 instala sozinho se faltar (via winget). Se preferir, instale a versão LTS em [nodejs.org](https://nodejs.org).

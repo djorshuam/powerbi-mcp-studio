@@ -33,6 +33,8 @@ O [MCP oficial da Microsoft](https://github.com/microsoft/powerbi-modeling-mcp) 
 
 ## Instalação (3 passos)
 
+> **Requisito de plano:** o Power BI ao vivo (MCP, editar o `.pbix` aberto) só funciona no **Cowork** (app Claude Desktop) ou no **Claude Code** — ambos exigem plano pago (**Pro, Max, Team ou Enterprise**). Na conversa comum e no **plano gratuito**, a skill funciona só com arquivos anexados (planilha → dashboard HTML, temas, layouts, auditoria de `.pbix` enviado).
+
 > **Usa o app Claude Desktop (inclusive gratuito)?** Siga o **[passo a passo do INSTALACAO.md](INSTALACAO.md)**: tem instalador automático do MCP para Windows.
 
 1. **Skill + agentes**

@@ -73,6 +73,11 @@ Leia a referencia antes de agir. Cliente com pasta em `clientes/<cliente>/`: lei
 - Tela: print antes/depois de acoes importantes; resultado inesperado → parar e avisar.
 - Galeria de design = inspiracao; num entregavel, nao reproduzir a identidade de outra marca.
 
+
+## Onde a skill funciona (verifique antes de tentar o MCP)
+- **Power BI ao vivo** (MCP `powerbi-modeling`, editar `.pbix` aberto, controle de tela): so no **Claude Code** ou no **Cowork** (app Claude Desktop). Ambos exigem plano **pago (Pro, Max, Team, Enterprise)**.
+- **Conversa comum / plano gratuito**: o MCP local pode ate aparecer "em execucao", mas as chamadas nao chegam ao computador ("No result received from the Claude Desktop app"). Nao insista: explique em 1 frase e ofereca o que funciona com arquivos anexados (planilha → dashboard HTML, temas, layouts, auditoria do `.pbix` enviado e devolucao do arquivo editado).
+
 ## Instalacao e problemas do MCP (conduza a pessoa, passo a passo)
 Skill nao instala MCP: o MCP `powerbi-modeling` roda no computador da pessoa (Windows + Power BI Desktop). Sem ele: ainda funcionam planilha → HTML, temas, layouts e auditoria de arquivo enviado.
 1. **Node.js**: o instalador abaixo instala sozinho (winget). Manual: versao LTS em nodejs.org.
