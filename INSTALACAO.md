@@ -15,7 +15,7 @@ Escolha onde você usa o Claude. A skill sozinha **não instala o MCP**: o MCP d
 3. **Configure o MCP do Power BI (automático):** baixe [instalar-mcp-windows.ps1](https://github.com/djorshuam/powerbi-mcp-studio/raw/main/instalar/instalar-mcp-windows.ps1), clique com o botão direito → **Executar com PowerShell**. Ele faz backup da sua configuração e só acrescenta o Power BI.
    <details><summary>Prefere fazer à mão?</summary>
 
-   *Configurações → Desenvolvedor → Editar configuração*. Se o arquivo estiver vazio, cole:
+   *Configurações → Servidores MCP locais (em versões antigas: Desenvolvedor) → Editar configuração*. Se o arquivo estiver vazio, cole:
    ```json
    {
      "mcpServers": {
@@ -31,7 +31,7 @@ Escolha onde você usa o Claude. A skill sozinha **não instala o MCP**: o MCP d
 4. **Feche o Claude Desktop de verdade** (ícone perto do relógio → Sair) e abra de novo.
 5. **Teste:** abra um `.pbix` no Power BI Desktop e peça: *"use a /powerbi-mcp-studio e identifique o arquivo Power BI aberto"*. Na primeira vez, aceite os termos do MCP da Microsoft.
 
-**Não apareceu?** Em *Configurações → Desenvolvedor* o servidor `powerbi-modeling` deve estar listado. Se estiver com erro, confira o Node (`node -v` ≥ 18). Se a opção Desenvolvedor não existir, o seu plano/versão não oferece MCP local.
+**Não apareceu?** Em *Configurações → Servidores MCP locais* o servidor `powerbi-modeling` deve estar listado. Se estiver com erro, confira o Node (`node -v` ≥ 18). Se essa opção não existir, o seu plano/versão não oferece MCP local.
 
 ## Claude Code
 
