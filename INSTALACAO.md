@@ -52,6 +52,7 @@ O `npx github:` precisa do **Git** instalado. Sem Git: descompacte o zip acima e
 | `'New-Item' não é reconhecido...` | Comando de PowerShell digitado no Prompt de Comando (cmd) | Use a versão do cmd (`mkdir ...`) ou abra o **PowerShell** |
 | Script `.ps1` bloqueado ao executar | Política de execução do Windows | `powershell -ExecutionPolicy Bypass -File "$HOME\Downloads\instalar-mcp-windows.ps1"` |
 | Servidor `powerbi-modeling` não aparece em *Servidores MCP locais* | JSON inválido ou app não foi fechado de verdade | Feche pelo ícone perto do relógio → **Sair**; confira o JSON (o instalador valida e faz backup) |
+| *"powerbi-modeling não respondeu em um minuto"* na 1ª vez · log com `spawn EBUSY` | O primeiro download do MCP passa de 1 minuto (o app desiste) ou o app foi reaberto no meio do download | Espere ~2 min, feche o app pela bandeja (**Sair**), aguarde 10 s e abra **uma vez**. Da 2ª vez em diante o pacote já está em cache e inicia em segundos |
 | Claude não acha o relatório | Power BI Desktop fechado ou ainda carregando | Abra o `.pbix`, espere carregar e peça de novo |
 
 **Ver o log do MCP:** *Configurações → Servidores MCP locais → powerbi-modeling → ver logs* (ou a pasta `%APPDATA%\Claude\logs`, arquivo `mcp-server-powerbi-modeling.log`). Mande o log ao Claude: a skill sabe interpretar os erros acima.

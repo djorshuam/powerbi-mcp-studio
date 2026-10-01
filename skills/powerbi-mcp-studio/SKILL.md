@@ -88,5 +88,6 @@ Skill nao instala MCP: o MCP `powerbi-modeling` roda no computador da pessoa (Wi
 | `'npx' nao e reconhecido` / servidor some sem erro | usar caminho completo `C:\\Program Files\\nodejs\\npx.cmd`; conferir `node -v` ≥ 18 |
 | Servidor nao aparece na lista | JSON invalido ou app nao foi fechado pela bandeja |
 | Opcao "Servidores MCP locais" nao existe | versao/plano sem MCP local: usar o que funciona sem MCP ou Claude Code |
+| *"powerbi-modeling não respondeu em um minuto"* na 1ª vez · log com `spawn EBUSY` | O primeiro download do MCP passa de 1 minuto (o app desiste) ou o app foi reaberto no meio do download | Espere ~2 min, feche o app pela bandeja (**Sair**), aguarde 10 s e abra **uma vez**. Da 2ª vez em diante o pacote já está em cache e inicia em segundos |
 | `ListLocalInstances` vazio | Power BI Desktop fechado ou ainda carregando; abrir o .pbix e esperar |
 | Zip recusado no app ("plugin manifest" / "SKILL.md nested") | usou o "Download ZIP" do GitHub; baixar `dist/powerbi-mcp-studio.zip` do repositorio |
