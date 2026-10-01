@@ -195,4 +195,4 @@ Claude Desktop: apagar a entrada do `claude_desktop_config.json` e reiniciar.
 
 
 ### Erro `npm error enoent ... AppData\Roaming\npm` no log do MCP
-Node recem-instalado sem a pasta do npm. Correcao: no PowerShell, `New-Item -ItemType Directory -Force "$env:APPDATA\npm"`; depois fechar o Claude Desktop pela bandeja e reabrir.
+Node recem-instalado sem a pasta do npm. Correcao: no Prompt de Comando, `mkdir "%APPDATA%\npm"` (no PowerShell: `New-Item -ItemType Directory -Force "$env:APPDATA\npm"`); depois fechar o Claude Desktop pela bandeja e reabrir.

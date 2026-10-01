@@ -84,7 +84,7 @@ Skill nao instala MCP: o MCP `powerbi-modeling` roda no computador da pessoa (Wi
 
 | Sintoma (log do MCP / app) | Correcao |
 |---|---|
-| `npm error enoent ... AppData\Roaming\npm` | PowerShell: `New-Item -ItemType Directory -Force "$env:APPDATA\npm"`; reabrir o app |
+| `npm error enoent ... AppData\Roaming\npm` | cmd: `mkdir "%APPDATA%\npm"` (PowerShell: `New-Item -ItemType Directory -Force "$env:APPDATA\npm"`); reabrir o app |
 | `'npx' nao e reconhecido` / servidor some sem erro | usar caminho completo `C:\\Program Files\\nodejs\\npx.cmd`; conferir `node -v` ≥ 18 |
 | Servidor nao aparece na lista | JSON invalido ou app nao foi fechado pela bandeja |
 | Opcao "Servidores MCP locais" nao existe | versao/plano sem MCP local: usar o que funciona sem MCP ou Claude Code |
