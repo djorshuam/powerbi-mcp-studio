@@ -72,3 +72,21 @@ Leia a referencia antes de agir. Cliente com pasta em `clientes/<cliente>/`: lei
 - Tokens (`FIGMA_TOKEN`) nunca no chat, codigo ou repositorio.
 - Tela: print antes/depois de acoes importantes; resultado inesperado → parar e avisar.
 - Galeria de design = inspiracao; num entregavel, nao reproduzir a identidade de outra marca.
+
+## Instalacao e problemas do MCP (conduza a pessoa, passo a passo)
+Skill nao instala MCP: o MCP `powerbi-modeling` roda no computador da pessoa (Windows + Power BI Desktop). Sem ele: ainda funcionam planilha → HTML, temas, layouts e auditoria de arquivo enviado.
+1. **Node.js**: o instalador abaixo instala sozinho (winget). Manual: versao LTS em nodejs.org.
+2. **Instalador automatico**: baixar `https://github.com/djorshuam/powerbi-mcp-studio/raw/main/instalar/instalar-mcp-windows.ps1` → botao direito → *Executar com PowerShell*. Bloqueado por politica: `powershell -ExecutionPolicy Bypass -File "$HOME\Downloads\instalar-mcp-windows.ps1"`.
+3. **Manual**: *Configuracoes → Servidores MCP locais (antigo: Desenvolvedor) → Editar configuracao*. Peca o conteudo atual e devolva o arquivo inteiro mesclado (JSON invalido = o app ignora todos os servidores). Entrada:
+   `"powerbi-modeling": {"command": "C:\\Program Files\\nodejs\\npx.cmd", "args": ["-y", "@microsoft/powerbi-modeling-mcp@latest", "--start", "--readwrite", "--require-confirmation"]}` (caminho completo do npx, barras duplas; confira com `where npx`).
+4. **Reiniciar de verdade**: icone perto do relogio → Sair → abrir de novo.
+5. **Testar**: `.pbix` aberto → "identifique o arquivo Power BI aberto" (`ListLocalInstances`). Na 1a vez, aceitar os termos do MCP (EULA) apos a pessoa ler.
+
+| Sintoma (log do MCP / app) | Correcao |
+|---|---|
+| `npm error enoent ... AppData\Roaming\npm` | PowerShell: `New-Item -ItemType Directory -Force "$env:APPDATA\npm"`; reabrir o app |
+| `'npx' nao e reconhecido` / servidor some sem erro | usar caminho completo `C:\\Program Files\\nodejs\\npx.cmd`; conferir `node -v` ≥ 18 |
+| Servidor nao aparece na lista | JSON invalido ou app nao foi fechado pela bandeja |
+| Opcao "Servidores MCP locais" nao existe | versao/plano sem MCP local: usar o que funciona sem MCP ou Claude Code |
+| `ListLocalInstances` vazio | Power BI Desktop fechado ou ainda carregando; abrir o .pbix e esperar |
+| Zip recusado no app ("plugin manifest" / "SKILL.md nested") | usou o "Download ZIP" do GitHub; baixar `dist/powerbi-mcp-studio.zip` do repositorio |
