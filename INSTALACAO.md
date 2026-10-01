@@ -40,3 +40,18 @@ npx github:djorshuam/powerbi-mcp-studio
 claude mcp add powerbi-modeling --scope user -- npx -y @microsoft/powerbi-modeling-mcp@latest --start --readwrite --require-confirmation
 ```
 O `npx github:` precisa do **Git** instalado. Sem Git: descompacte o zip acima em `~/.claude/skills/` e copie `agents/*.md` para `~/.claude/agents/`.
+
+## Problemas comuns (vistos em instalações reais)
+
+| O que aparece | Por quê | Como resolver |
+|---|---|---|
+| App recusa o zip: *"A skill cannot contain a plugin manifest"* / *"SKILL.md must be in the top-level folder"* | Baixou o repositório inteiro pelo **Code → Download ZIP** do GitHub | Baixe o zip certo: [dist/powerbi-mcp-studio.zip](https://github.com/djorshuam/powerbi-mcp-studio/raw/main/dist/powerbi-mcp-studio.zip) |
+| Skill instalada, mas o Claude diz que *"não tem conexão com o Power BI"* | A skill não instala o MCP; ele roda no seu computador | Siga os passos 2 a 5 acima (Node.js + instalador do MCP) |
+| `npx` não funciona / *"Node não encontrado"* | Node.js não instalado | O instalador instala via winget; ou baixe a versão LTS em [nodejs.org](https://nodejs.org) |
+| Log do MCP: `npm error enoent ... AppData\Roaming\npm` | Node recém-instalado sem a pasta do npm | **Prompt de Comando:** `mkdir "%APPDATA%\npm"` · **PowerShell:** `New-Item -ItemType Directory -Force "$env:APPDATA\npm"` · depois feche o app pela bandeja e reabra |
+| `'New-Item' não é reconhecido...` | Comando de PowerShell digitado no Prompt de Comando (cmd) | Use a versão do cmd (`mkdir ...`) ou abra o **PowerShell** |
+| Script `.ps1` bloqueado ao executar | Política de execução do Windows | `powershell -ExecutionPolicy Bypass -File "$HOME\Downloads\instalar-mcp-windows.ps1"` |
+| Servidor `powerbi-modeling` não aparece em *Servidores MCP locais* | JSON inválido ou app não foi fechado de verdade | Feche pelo ícone perto do relógio → **Sair**; confira o JSON (o instalador valida e faz backup) |
+| Claude não acha o relatório | Power BI Desktop fechado ou ainda carregando | Abra o `.pbix`, espere carregar e peça de novo |
+
+**Ver o log do MCP:** *Configurações → Servidores MCP locais → powerbi-modeling → ver logs* (ou a pasta `%APPDATA%\Claude\logs`, arquivo `mcp-server-powerbi-modeling.log`). Mande o log ao Claude: a skill sabe interpretar os erros acima.

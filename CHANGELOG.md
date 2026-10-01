@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1] - 2026-10-01
+Instalação mais fácil, a partir do primeiro uso real.
+- `dist/powerbi-mcp-studio.zip`: zip pronto para o app Claude (o "Download ZIP" do GitHub é recusado pelo app).
+- `instalar/instalar-mcp-windows.ps1`: configura o MCP do Power BI no Claude Desktop sozinho (instala o Node.js via winget, cria a pasta do npm, faz backup e mescla a configuração).
+- `INSTALACAO.md`: passo a passo por ambiente (app desktop, web, Claude Code) e tabela de problemas comuns.
+- Skill: quando o MCP não está instalado, conduz a instalação; tabela sintoma → correção no SKILL.md.
+
 ## [1.0.0] - 2026-09-30
 Primeira versão pública.
 - Planilha → modelo estrela + `Calendario` + `_Medidas` com pastas + páginas prontas (visuais nativos com acabamento).
